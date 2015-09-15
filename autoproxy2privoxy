@@ -27,7 +27,7 @@ atprxy2prvxy()
   while read -r line; do
     _atprxy2prvxy "$line"
   done < <(sed '/^\[AutoProxy [0-9.]\+\]$/d' "${file}")
-  if [ "${PROXY_TYPE^^}" == HTTP ]; then
+  if [ "${PROXY_TYPE}" == HTTP ]; then
     local forward_proxy="forward ${PROXY_ADDR}"
   else
     local forward_proxy="forward-${PROXY_TYPE,,} ${PROXY_ADDR} ." # assuming no parent HTTP proxy
