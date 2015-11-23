@@ -1,13 +1,14 @@
-{+forward-override{forward 127.0.0.1:8080}}
+{+forward-override{forward http://127.0.0.1:8118}}
 .*[AutoProxy 0.2.9]*.:80
 :80/.*[AutoProxy 0\.2\.9]
-# Checksum: T1Bf53lctTMxJq/sh/Yo3w
+# Checksum: xOPgRIvCwVgiqxeJKoJCHA
 # Expires: 6h
-# Last Modified: Tue, 15 Sep 2015 15:14:33 +0800
+# Last Modified: Fri, 13 Nov 2015 16:21:37 +0800
 # HomePage: https://autoproxy-gfwlist.googlecode.com/
 #---------------------Fraud------------------------
 .*.lsxszzg.com*.:80
 :80/.*\.lsxszzg\.com
+#---------------Non-Latin characters---------------
 #------------Restricted & URL Redirects------------
 #--ehentai
 85.17.73.31:80/
@@ -49,6 +50,7 @@ www.parkansky.com:80
 .pure18.com
 .qq.co.za
 radiko.jp:80
+.rd.com
 .rdio.com
 cdn*.search.xxx:80/
 .slacker.com
@@ -76,7 +78,7 @@ ecsm.vs.com:80/
 .1000giri.net
 .*.10conditionsoflove.com*.:80
 :80/.*\.10conditionsoflove\.com
-.10musume.com1000giri.net
+.10musume.com
 .*123rf.com*.:80
 :80/.*123rf\.com
 .*.12bet.com*.:80
@@ -298,6 +300,7 @@ antiwave.net:80
 .*video.aol.com*.:80
 :80/.*video\.aol\.com
 .video.aol.com
+.search.aol.com
 .*www.aolnews.com*.:80
 :80/.*www\.aolnews\.com
 .aomiwang.com
@@ -309,6 +312,7 @@ antiwave.net:80
 .*.apigee.com*.:80
 :80/.*\.apigee\.com
 .apigee.com
+.appannie.com
 .*appledaily.com*.:80
 :80/.*appledaily\.com
 .*archive.is*.:80
@@ -619,13 +623,14 @@ static*.businessinsider.com:80/
 .*.businessweek.com*.:80
 :80/.*\.businessweek\.com
 #--businesstimes
-.*.businesstimes.com.cn*.:80
-:80/.*\.businesstimes\.com\.cn
-businesstimes.com.cn:80
+#-.businesstimes.com.cn
+#-|http://businesstimes.com.cn
 .bugclub.org
 .buugaa.com
 .*.buzzhand.com*.:80
 :80/.*\.buzzhand\.com
+.*.buzzhand.net*.:80
+:80/.*\.buzzhand\.net
 .*buzzurl.jp*.:80
 :80/.*buzzurl\.jp
 .*bwsj.hk*.:80
@@ -871,6 +876,7 @@ chicagoncmtv.com:80
 .chinasoul.org
 .*chinatimes.com*.:80
 :80/.*chinatimes\.com
+.chinatopsex.com
 .*chinatweeps.com*.:80
 :80/.*chinatweeps\.com
 .*chinaway.org*.:80
@@ -979,6 +985,7 @@ www.cmoinc.org:80
 .cochina.org
 .*.code1984.com:80/64
 :80/.*\.code1984\.com/64
+goagent.codeplex.com:80
 .codeshare.io
 .codeskulptor.org
 tosh.comedycentral.com:80
@@ -1287,6 +1294,8 @@ dw-world.de:80
 :80/.*\.e-traderland\.net/board
 .*.e123.hk*.:80
 :80/.*\.e123\.hk
+.*eastern-ark.com*.:80
+:80/.*eastern-ark\.com
 .*.eastturkestan.com*.:80
 :80/.*\.eastturkestan\.com
 www.eastturkistan.net:80/
@@ -1381,6 +1390,9 @@ erktv.com:80/
 .etizer.org
 .*.ettoday.net*.:80
 :80/.*\.ettoday\.net
+.*.eu.org*.:80
+:80/.*\.eu\.org
+.eu.org
 .*.eulam.com*.:80
 :80/.*\.eulam\.com
 .*eventful.com*.:80
@@ -1922,6 +1934,7 @@ gongwt.com:80/
 #----------------Google----------------
 .abc.xyz
 .agoogleaday.com
+.androidify.com
 .chromeexperiments.com
 .chromercise.com
 .data-vocabulary.org
@@ -1931,7 +1944,7 @@ gongwt.com:80/
 .gmodules.com
 .goo.gl
 .*google.(*)
-.google-analytics.com
+#--||google-analytics.com
 #--||googleadservices.com
 .googleapis.com
 .googleartproject.com
@@ -1951,13 +1964,16 @@ gongwt.com:80/
 #--||googletagservices.com
 .googleusercontent.com
 .googlevideo.com
-.proxy.googlezip.net
+.googlezip.net
 .groups.google.cn
 .gvt0.com
 .gvt1.com
 .html5rocks.com
+.nic.google
 .panoramio.com
+.polymer-project.org
 .recaptcha.net
+.registry.google
 sipml5.org:80/
 #--||www.google
 #------------Google App Engine/Appspot-------
@@ -2858,6 +2874,9 @@ leirentv.ca:80
 .*letscorp.net*.:80
 :80/.*letscorp\.net
 .letscorp.net
+.*.liangyou.net*.:80
+:80/.*\.liangyou\.net
+.liangyou.net
 .*liansi.org*.:80
 :80/.*liansi\.org
 .*.lianyue.net*.:80
@@ -3018,6 +3037,8 @@ maturejp.com:80
 .md-t.org
 .*.mediafire.com:80/\?
 :80/.*\.mediafire\.com/\?
+.*.mediafire.com:80/download
+:80/.*\.mediafire\.com/download
 .meetup.com
 .*mefeedia.com*.:80
 :80/.*mefeedia\.com
@@ -3392,6 +3413,7 @@ news.now.com:80/home.*
 :80/.*\.nydus\.ca
 .nyt.com
 .nytco.com
+nyti.ms:80/
 .*.nytimes.com*.:80
 :80/.*\.nytimes\.com
 .nytimes.com
@@ -3596,6 +3618,7 @@ pearlher.org:80
 .*.pekingduck.org*.:80
 :80/.*\.pekingduck\.org
 .pekingduck.org
+.pen.io
 .*penchinese.com*.:80
 :80/.*penchinese\.com
 .penchinese.net
@@ -3666,6 +3689,7 @@ pictures.playboy.com:80
 .*.pmates.com*.:80
 :80/.*\.pmates\.com
 .po2b.com
+.pocoo.org
 .podictionary.com
 .*.pokerstars.com*.:80
 :80/.*\.pokerstars\.com
@@ -3787,7 +3811,7 @@ posterous.com:80
 .*psblog.name*.:80
 :80/.*psblog\.name
 .psblog.name
-#--psiphon.ca
+.psiphon.ca
 .*.ptt.cc*.:80
 :80/.*\.ptt\.cc
 .*.puffstore.com*.:80
@@ -4360,6 +4384,7 @@ sourceforge.net:80/p.*/shadowsocksgui/
 #--|http://cdn.sstatic.net/
 .*www.stackfile.com:80/freedur
 :80/.*www\.stackfile\.com/freedur
+stackoverflow.com:80/users/895245
 .*.stage64.hk*.:80
 :80/.*\.stage64\.hk
 .stage64.hk
@@ -4866,6 +4891,7 @@ tw01.org:80
 #--@@||media.tumblr.com
 #--@@||static.tumblr.com
 #--@@||www.tumblr.com
+.fqrouter.tumblr.com
 .301works.org
 .365singles.com.ar
 .all-that-is-interesting.com
@@ -5631,6 +5657,9 @@ woesermiddle-way.net:80/
 #-cn.wsj.com/gb/20130215/tec113853.asp
 .*.wsj.com*.:80
 :80/.*\.wsj\.com
+.wsj.com
+.*.wsjhk.com*.:80
+:80/.*\.wsjhk\.com
 .*.wsj.net*.:80
 :80/.*\.wsj\.net
 .*.wtfpeople.com*.:80
@@ -5657,6 +5686,7 @@ woesermiddle-way.net:80/
 #--------------------------XX--------------------------
 .*.x-berry.com*.:80
 :80/.*\.x-berry\.com
+.x-berry.com
 .x-art.com
 .x-wall.org
 .*x1949x.com*.:80
@@ -5807,6 +5837,7 @@ xinyubbs.net:80
 .yes123.com.tw
 .yesasia.com
 .yesasia.com.hk
+.yecl.net
 #--yfrog.com
 .yhcw.net
 .*.yi.org*.:80
@@ -5825,6 +5856,8 @@ xinyubbs.net:80
 .*.yipub.com*.:80
 :80/.*\.yipub\.com
 .yipub.com
+.*yinlei.org:80/mt
+:80/.*yinlei\.org/mt
 .*.yogichen.org*.:80
 :80/.*\.yogichen\.org
 .yogichen.org
@@ -6243,6 +6276,7 @@ zh.m.wikipedia.org:443
 .aliyun.com
 .baidu.com
 .chinaso.com
+.dl.google.com
 .fonts.googleapis.com
 .csi.gstatic.com
 .fonts.gstatic.com
